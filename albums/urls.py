@@ -1,3 +1,6 @@
 from django.urls import path
+# from .views import #model
 
-urlpatterns = []
+urlpatterns = [
+  path('albums/', ,name=api_view)
+]
