@@ -1,6 +1,7 @@
-from django.urls import path
-# from .views import #model
+from django.urls import path, include
+from .views import AlbumList, AlbumDetail
 
 urlpatterns = [
-  path('albums/', ,name=api_view)
+  path('albums/', AlbumList.as_view(),name='api_list'),
+  path('albums/<int:pk>/', AlbumDetail.as_view(),name='detail'),
 ]
